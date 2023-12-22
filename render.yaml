@@ -8,6 +8,7 @@ services:
   - type: web
     name: dream_rent_api
     env: ruby
+    plan: free
     buildCommand: "./render-build.sh"
     startCommand: "bundle exec rails s"
     envVars:
