@@ -16,6 +16,7 @@ test:
 
 production:
   <<: *default
-  database: <%= ENV['PRODUCTION_DATABASE'] %>
+  url: <%= ENV['DATABASE_URL'] %>
+  database: dream_rent_api_production
   username: <%= ENV['DATABASE_USERNAME'] %>
   password: <%= ENV['DATABASE_PASSWORD'] %>
