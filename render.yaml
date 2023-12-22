@@ -2,7 +2,7 @@ databases:
   - name: postgres
     ipAllowList: []
     databaseName: dream_rent_api
-    user: postgres
+    user: <%= ENV['DATABASE_USERNAME'] %>
 
 services:
   - type: web
