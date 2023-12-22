@@ -4,7 +4,6 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: <%= ENV['DATABASE_USERNAME'] %>
   password: <%= ENV['DATABASE_PASSWORD'] %>
-  # host: db
 
 development:
   <<: *default
@@ -18,5 +17,5 @@ production:
   <<: *default
   url: <%= ENV['DATABASE_URL'] %>
   database: dream_rent_api_production
-  username: <%= ENV['DATABASE_USERNAME'] %>
+  username: dream_rent_api
   password: <%= ENV['DATABASE_PASSWORD'] %>
