@@ -1,5 +1,5 @@
 class House < ApplicationRecord
-  has_many :appointments
+  has_many :appointments, dependent: :destroy
   has_one_attached :image
 
   validate :check_file_presence
