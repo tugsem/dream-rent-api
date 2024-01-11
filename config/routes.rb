@@ -8,9 +8,9 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
-      post 'users/login', to: 'users/login'
-      post 'users/register', to: 'users/register'
-      get 'users/index', to: 'users/index'
+      post 'users/login', to: 'users#login'
+      post 'users/register', to: 'users#register'
+      get 'users/index', to: 'users#index'
 
       resources :appointments
       resources :houses
